@@ -7,9 +7,11 @@ public class Main {
         Scanner ler = new Scanner(System.in);
         String acao;
 
+        // Inicia o programa
         do {
-            System.out.println("\nComandos: adicionar, listar, buscar, remover, sair");
-            System.out.print("Digite um comando: ");
+            System.out.println("\n------------------------ COMANDOS DISPONÍVEIS --------------------------");
+            System.out.println("  [ Adicionar ]  |  [ Listar ]  |  [ Buscar ]  |  [ Remover ]  |  [ Sair ]");
+            System.out.println("--------------------------------------------------------------------------");
             acao = ler.nextLine();
 
             switch (acao.toLowerCase()) {

@@ -10,7 +10,7 @@ public class Repositorio {
         this.contadorId = 1;
     }
 
-    //metodo para adicionar tarefa
+    //Metodo para adicionar tarefa
     public void adicionarTarefa(String descricao, String status) {
         Tarefa novaTarefa = new Tarefa(contadorId++, descricao, status);
         tarefas.add(novaTarefa);
@@ -18,6 +18,9 @@ public class Repositorio {
 
     // Listar todas as tarefas
     public ArrayList<Tarefa> listarTarefas() {
+        if (tarefas.isEmpty()) {
+            System.out.println("Nenhuma tarefa cadastrada.");
+        }
         return tarefas;
     }
 
